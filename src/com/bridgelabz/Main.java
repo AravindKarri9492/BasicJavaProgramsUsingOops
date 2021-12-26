@@ -15,7 +15,8 @@ public class Main
                     "2.leap year \n" +
                     "3.power of two \n" +
                     "4.harmonic number \n" +
-                    "5.exit ");
+                    "5.prime factors \n" +
+                    "6.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -44,7 +45,16 @@ public class Main
                     break;
 
                 case 5:
+                    System.out.println("Enter a number to get prime factors :");
+                    int num = scanner.nextInt();
+                    object.primeFactors(num);
+                    break;
+
+                case 6:
                     System.exit(0);
+
+                default:
+                    System.err.println("Enter correct value! ");
             }
 
         }
