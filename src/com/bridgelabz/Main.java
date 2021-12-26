@@ -16,7 +16,8 @@ public class Main
                     "3.power of two \n" +
                     "4.harmonic number \n" +
                     "5.prime factors \n" +
-                    "6.exit ");
+                    "6.quotient and remainder \n" +
+                    "7.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -51,6 +52,13 @@ public class Main
                     break;
 
                 case 6:
+                    System.out.println("Enter dividend divisor: ");
+                    int dividend = scanner.nextInt();
+                    int divisor = scanner.nextInt();
+                    object.quotientAndRemainder(dividend,divisor);
+                    break;
+
+                case 7:
                     System.exit(0);
 
                 default:
