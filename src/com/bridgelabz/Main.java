@@ -21,7 +21,8 @@ public class Main
                     "8.even or odd \t" +
                     "9.vowel or consonant \n" +
                     "10.largest number \t" +
-                    "11.exit ");
+                    "11.two dimensional array \t" +
+                    "12.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -89,8 +90,13 @@ public class Main
                     System.out.print("Enter the third number :");
                     int c = scanner.nextInt();
                     object.largestNumber(a,b,c);
+                    break;
 
                 case 11:
+                    object.twoDimensionalArray();
+                    break;
+
+                case 12:
                     System.exit(0);
 
                 default:
