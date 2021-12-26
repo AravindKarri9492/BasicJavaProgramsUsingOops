@@ -75,6 +75,12 @@ public class Main
                     break;
 
                 case 9:
+                    System.out.println("Enter an alphabet to check it is vowel or consonant :");
+                    char ch = scanner.next().charAt(0);
+                    object.vowelOrConsonant(ch);
+                    break;
+
+                case 10:
                     System.exit(0);
 
                 default:
