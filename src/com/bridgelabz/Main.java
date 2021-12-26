@@ -13,7 +13,8 @@ public class Main
             System.out.println("Please select which program do you want to run");
             System.out.println("1.flip coin \n" +
                     "2.leap year \n" +
-                    "3.exit ");
+                    "3.power of two \n" +
+                    "4.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -30,6 +31,12 @@ public class Main
                     break;
 
                 case 3:
+                    System.out.println("Enter power value: ");
+                    int exponent = scanner.nextInt();
+                    object.powerOfTwo(exponent);
+                    break;
+
+                case 4:
                     System.exit(0);
             }
 
