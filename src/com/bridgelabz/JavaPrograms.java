@@ -222,4 +222,9 @@ class JavaPrograms
             }
         }
     }
+    //Distance
+    public double measureDistance(double xCoOrdinate, double yCoOrdinate)
+    {
+        return Math.pow((Math.pow(xCoOrdinate , 2) + Math.pow(yCoOrdinate , 2)), 0.5);
+    }
 }
