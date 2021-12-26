@@ -22,7 +22,8 @@ public class Main
                     "9.vowel or consonant \n" +
                     "10.largest number \t" +
                     "11.two dimensional array \t" +
-                    "12.exit ");
+                    "12.sum of three integers \t" +
+                    "13.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -97,6 +98,10 @@ public class Main
                     break;
 
                 case 12:
+                    object.sumOfThreeIntegers();
+                    break;
+
+                case 13:
                     System.exit(0);
 
                 default:
