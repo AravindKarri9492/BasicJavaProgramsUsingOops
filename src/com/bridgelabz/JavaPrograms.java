@@ -3,7 +3,7 @@ package com.bridgelabz;
 class JavaPrograms
 {
     //FlipCoin
-    public static void flip(int numOfFlips)
+    public void flip(int numOfFlips)
     {
         if(numOfFlips <= 0 )
         {
@@ -26,7 +26,7 @@ class JavaPrograms
         }
     }
     //LeapYear
-    public static void leapYear(int yearToCheck)
+    public void leapYear(int yearToCheck)
     {
         if(Integer.toString(yearToCheck).length() == 4)  //Ensure year length is 4
         {
@@ -49,7 +49,7 @@ class JavaPrograms
         }
     }
     //power of two
-    public static void powerOfTwo(int exponent)
+    public void powerOfTwo(int exponent)
     {
         System.out.println("==========================");
         System.out.println("i       2 to power i   ");
@@ -69,7 +69,7 @@ class JavaPrograms
         }
     }
     //Harmonic number
-    public static void harmonicNumber(int number)
+    public void harmonicNumber(int number)
     {
         double harmonicNum =0;
         if (number > 0)
@@ -86,7 +86,7 @@ class JavaPrograms
         }
     }
     //Prime factors
-    public static void primeFactors(int number)
+    public void primeFactors(int number)
     {
         for(int i = 2; i< number; i++)
         {
@@ -102,7 +102,7 @@ class JavaPrograms
         }
     }
     //Quotient and remainder
-    public static void quotientAndRemainder(int dividend,int divisor)
+    public void quotientAndRemainder(int dividend,int divisor)
     {
         int quotient = dividend / divisor;
         int remainder = dividend % divisor;
@@ -110,12 +110,24 @@ class JavaPrograms
         System.out.println("Remainder = " + remainder);
     }
     //Swapping
-    public static void swapTwoNumbers(int num1,int num2)
+    public void swapTwoNumbers(int num1,int num2)
     {
         int temp = num1;
         num1 = num2;
         num2 = temp;
         System.out.println("first number after swapping is " + num1);
         System.out.println("second number after swapping is " + num2);
+    }
+    //Even or Odd
+    public void evenOrOdd(int number)
+    {
+        if (number%2 == 0)
+        {
+            System.out.println(number+ " is even number");
+        }
+        else
+        {
+            System.out.println(number + " is odd number");
+        }
     }
 }

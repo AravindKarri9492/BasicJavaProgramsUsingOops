@@ -11,14 +11,16 @@ public class Main
         {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please select which program do you want to run");
-            System.out.println("1.flip coin \n" +
-                    "2.leap year \n" +
-                    "3.power of two \n" +
+            System.out.println("1.flip coin \t" +
+                    "2.leap year \t" +
+                    "3.power of two \t" +
                     "4.harmonic number \n" +
-                    "5.prime factors \n" +
-                    "6.quotient and remainder \n" +
-                    "7.swapping two numbers \n" +
-                    "8.exit ");
+                    "5.prime factors \t" +
+                    "6.quotient and remainder \t" +
+                    "7.swapping two numbers \t" +
+                    "8.even or odd \t" +
+                    "9.vowel or consonant \t" +
+                    "10.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -67,6 +69,12 @@ public class Main
                     break;
 
                 case 8:
+                    System.out.println("Enter a number to check even or odd : ");
+                    int number1 = scanner.nextInt();
+                    object.evenOrOdd(number1);
+                    break;
+
+                case 9:
                     System.exit(0);
 
                 default:
