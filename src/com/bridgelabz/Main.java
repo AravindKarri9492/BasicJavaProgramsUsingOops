@@ -24,7 +24,8 @@ public class Main
                     "11.two dimensional array \t" +
                     "12.sum of three integers \t" +
                     "13.euclidean distance \t" +
-                    "14.exit ");
+                    "14.find roots of equation" +
+                    "15.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -113,6 +114,10 @@ public class Main
                     break;
 
                 case 14:
+                    object.findRootsOfTheEquation();
+                    break;
+
+                case 15:
                     System.exit(0);
 
                 default:
