@@ -14,7 +14,8 @@ public class Main
             System.out.println("1.flip coin \n" +
                     "2.leap year \n" +
                     "3.power of two \n" +
-                    "4.exit ");
+                    "4.harmonic number \n" +
+                    "5.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -37,6 +38,12 @@ public class Main
                     break;
 
                 case 4:
+                    System.out.println("Enter harmonic value: ");
+                    int number = scanner.nextInt();
+                    object.harmonicNumber(number);
+                    break;
+
+                case 5:
                     System.exit(0);
             }
 

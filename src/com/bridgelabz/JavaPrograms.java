@@ -68,4 +68,21 @@ class JavaPrograms
             System.err.println("Enter a valid exponent value b/w 0 to 31");
         }
     }
+    //Harmonic number
+    public static void harmonicNumber(int number)
+    {
+        double harmonicNum =0;
+        if (number > 0)
+        {
+            for (double i=1;i<=number;i++)
+            {
+                harmonicNum += (1/i);
+            }
+            System.out.println("Nth harmonic number is :"+harmonicNum);
+        }
+        else
+        {
+            System.err.println("Enter positive value");
+        }
+    }
 }
