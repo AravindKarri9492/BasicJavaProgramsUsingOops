@@ -109,4 +109,13 @@ class JavaPrograms
         System.out.println("Quotient = " + quotient);
         System.out.println("Remainder = " + remainder);
     }
+    //Swapping
+    public static void swapTwoNumbers(int num1,int num2)
+    {
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+        System.out.println("first number after swapping is " + num1);
+        System.out.println("second number after swapping is " + num2);
+    }
 }

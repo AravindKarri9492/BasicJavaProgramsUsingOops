@@ -17,7 +17,8 @@ public class Main
                     "4.harmonic number \n" +
                     "5.prime factors \n" +
                     "6.quotient and remainder \n" +
-                    "7.exit ");
+                    "7.swapping two numbers \n" +
+                    "8.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -59,6 +60,13 @@ public class Main
                     break;
 
                 case 7:
+                    System.out.println("Enter two numbers to perform swapping : ");
+                    int num1 = scanner.nextInt();
+                    int num2 = scanner.nextInt();
+                    object.swapTwoNumbers(num1,num2);
+                    break;
+
+                case 8:
                     System.exit(0);
 
                 default:
