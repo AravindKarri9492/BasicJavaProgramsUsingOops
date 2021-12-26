@@ -142,4 +142,20 @@ class JavaPrograms
             System.out.println(ch+" is an consonant");
         }
     }
+    //Largest Number
+    public void largestNumber(int a ,int b ,int c)
+    {
+        if(a>b && a>c)
+        {
+            System.out.println("Largest number is :" +a);
+        }
+        else if(b>a && b>c)
+        {
+            System.out.println("Largest number is :" +b);
+        }
+        else
+        {
+            System.out.println("Largest number is :" +c);
+        }
+    }
 }

@@ -19,8 +19,9 @@ public class Main
                     "6.quotient and remainder \t" +
                     "7.swapping two numbers \t" +
                     "8.even or odd \t" +
-                    "9.vowel or consonant \t" +
-                    "10.exit ");
+                    "9.vowel or consonant \n" +
+                    "10.largest number \t" +
+                    "11.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -81,6 +82,15 @@ public class Main
                     break;
 
                 case 10:
+                    System.out.print("Enter the first number :");
+                    int a = scanner.nextInt();
+                    System.out.print("Enter the second number :");
+                    int b = scanner.nextInt();
+                    System.out.print("Enter the third number :");
+                    int c = scanner.nextInt();
+                    object.largestNumber(a,b,c);
+
+                case 11:
                     System.exit(0);
 
                 default:
