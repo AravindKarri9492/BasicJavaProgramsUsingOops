@@ -220,6 +220,10 @@ class JavaPrograms
                     }
                 }
             }
+            System.out.println("Number of distinct triplets :" + tripletsCount);
+            // If no triplet with 0 sum found in array
+            if (found == false)
+                System.out.println("triplets not exist ");
         }
     }
     //Distance
@@ -243,5 +247,23 @@ class JavaPrograms
         root2 = (-1 * b - Math.sqrt(delta)) / (2 * a);
         System.out.println("Roots of the equation are: " + root1 + " , " + root2);
     }
-
+    //WindChill
+    public void windChill()
+    {
+        double temperature, velocity, windchill;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter temperature and velocity of the air: ");
+        temperature = Math.abs(scanner.nextInt());
+        velocity = Math.abs(scanner.nextInt());
+        scanner.close();
+        if(temperature > 50 && (velocity > 120) || (velocity < 3))
+        {
+            windchill = 35.74 + 0.6215 * temperature + (0.4275 * temperature - 35.75) * (Math.pow(velocity, 0.16));
+            System.out.println("Windchill : " + windchill);
+        }
+        else
+        {
+            System.err.println("Enter correct values!");
+        }
+    }
 }

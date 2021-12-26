@@ -14,8 +14,8 @@ public class Main
             System.out.println("1.flip coin \t" +
                     "2.leap year \t" +
                     "3.power of two \t" +
-                    "4.harmonic number \n" +
-                    "5.prime factors \t" +
+                    "4.harmonic number \t" +
+                    "5.prime factors \n" +
                     "6.quotient and remainder \t" +
                     "7.swapping two numbers \t" +
                     "8.even or odd \t" +
@@ -23,9 +23,10 @@ public class Main
                     "10.largest number \t" +
                     "11.two dimensional array \t" +
                     "12.sum of three integers \t" +
-                    "13.euclidean distance \t" +
-                    "14.find roots of equation" +
-                    "15.exit ");
+                    "13.euclidean distance \n" +
+                    "14.find roots of equation\t" +
+                    "15.windchill \t" +
+                    "16.exit ");
             int userChoice = scanner.nextInt();
             switch (userChoice)
             {
@@ -118,6 +119,10 @@ public class Main
                     break;
 
                 case 15:
+                    object.windChill();
+                    break;
+
+                case 16:
                     System.exit(0);
 
                 default:
